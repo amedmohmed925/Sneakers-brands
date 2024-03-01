@@ -1,0 +1,88 @@
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white; /* adjust color as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the container of brand filter buttons */
+  .brand-buttons-container {
+    display: flex;
+  }
+  
+  /* Generic style for all buttons */
+  .button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Additional styling for active state of button */
+  .button.active {
+    background-color: #e0e0e0;
+  }
+  
+  /* Style for the search input */
+  .search-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px; /* adjust width as needed */
+  }
+  
+  /* Style for the sneakers grid container */
+  .sneakers-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* adjust minmax values as needed for responsive behavior */
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Style for each sneaker card */
+  .sneaker-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the image within a sneaker card */
+  .sneaker-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Style for the sneaker model and colorway text */
+  .sneaker-model,
+  .sneaker-colorway {
+    padding: 0.5rem;
+    margin: 0;
+    background-color: white; /* adjust color as needed */
+    text-align: center;
+    color: red;
+  }
+  
+  /* Responsive behavior for the header on smaller screens */
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .brand-buttons-container {
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    .search-input {
+      width: 100%; /* full width on smaller screens */
+    }
+  }
+  
